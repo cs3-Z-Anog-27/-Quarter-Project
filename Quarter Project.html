@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neuroscience</title>
+    <style>
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+        .container {
+            text-align: center;
+            background-image: url('brain.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 80%;
+            max-width: 800px;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        h1 {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #what {
+            transform: scale(1.2);
+        }
+        button:hover {
+            transition-duration: 0.2s;
+            background-color: #04AA6D;
+            color: white;
+        }
+        #log {
+            padding-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Neuroscience</h1>
+        <button onclick="N()">What is Neuroscience</button>
+        <br>
+        <button onclick="C()">Complexities in the Brain</button>
+        <br>
+        <button onclick="H()">History of Neuroscience</button>
+        <br>
+        <button onclick="Q()">Home</button>
+        <br>
+		<button onclick="B()">Back to Login Page</button>
+        <br>
+    </div>
+   <script>
+        function Q() {
+            window.location.href = "Quarter Project.html";
+        }
+		 function C() {
+            window.location.href = "complexities.html";
+        }
+        function N() {
+            window.location.href = "what.html";
+        }
+        function B() {
+            window.location.href = "login.html";
+        }
+        function H(){
+            window.location.href = "history.html";
+        }
+    </script>
+</body>
+</html>
